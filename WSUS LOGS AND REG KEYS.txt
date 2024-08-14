@@ -1,0 +1,30 @@
+SOURCES - 
+https://learn.microsoft.com/en-us/windows/deployment/update/waas-wu-settings
+
+https://community.spiceworks.com/t/pointing-windows-10-to-wsus-via-registry/793958/6
+
+=============================
+WINDOWS UPDATE SCCM LOGS
+=============================
+"WUAHandler.log" "CAS.log" "ContentTransferManager.log" "DataTransferService.log" "PolicyAgent.log" "RebootCoordinator.log" "ScanAgent.log" "UpdatesDeployment.log" "UpdatesStore.log"
+
+=============================
+REG KEYS
+=============================
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate]
+"TargetGroupEnabled"=dword:00000001
+"TargetGroup"="GROUP NAME"
+"WUServer"="http://SERVERNAME:8530"
+"WUStatusServer"="http://SERVERNAME:8530"
+"UpdateServiceUrlAlternate"=""
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU]
+"NoAutoUpdate"=dword:00000000
+"AUOptions"=dword:00000003
+"ScheduledInstallDay"=dword:00000001
+"ScheduledInstallTime"=dword:00000004
+"RescheduleWaitTimeEnabled"=dword:00000000
+"UseWUServer"=dword:00000001
+
+
+MACHINENAME\HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU
