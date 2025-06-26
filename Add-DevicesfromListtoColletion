@@ -1,0 +1,1 @@
+Get-Content "C:\temp\LstofCompuers.txt" | foreach { Add-CMDeviceCollectionDirectMembershipRule -CollectionName "%NameofYourDeviceCollection%" -ResourceID (Get-CMDevice -Name $_).ResourceID }
