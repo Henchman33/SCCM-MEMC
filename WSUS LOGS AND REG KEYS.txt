@@ -6,7 +6,12 @@ https://community.spiceworks.com/t/pointing-windows-10-to-wsus-via-registry/7939
 =============================
 WINDOWS UPDATE SCCM LOGS
 =============================
+
+### Software Updates Logs to use when troubleshooting Updates on Clients ###
 "WUAHandler.log" "CAS.log" "ContentTransferManager.log" "DataTransferService.log" "PolicyAgent.log" "RebootCoordinator.log" "ScanAgent.log" "UpdatesDeployment.log" "UpdatesStore.log"
+
+### Software Updates Logs to use when troubleshooting Updates on Clients ### - Expanded: 
+"WUAHandler.log" "CAS.log" "ContentTransferManager.log" "DataTransferService.log" "PolicyAgent.log" "RebootCoordinator.log" "ScanAgent.log" "UpdatesDeployment.log" "UpdatesHandler.log" "UpdatesStore.log" "MaintenanceCoordinator.log"
 
 =============================
 REG KEYS
